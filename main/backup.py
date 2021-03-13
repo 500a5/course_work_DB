@@ -29,7 +29,7 @@ class doDump(CronJobBase):
 
         system(f'python manage.py dumpdata > backup/db.json')
         system(f'python manage.py dumpdata auth.user --indent 2 --format xml > backup/user.xml')
-
+# ff
         YANDEX_DIR = "/backups/"
 
         y = yadisk.YaDisk(token=f"{YANDEX_TOKEN}")

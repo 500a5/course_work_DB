@@ -7,14 +7,14 @@ import shutil
 
 DATA_BASE = "site"
 USERNAME = "postgres"
-PASSWORD = "123456789"
+PASSWORD = ""
 HOST = "localhost"
 PORT = "5432"
 m = os.path.abspath("backup/")
 PG_DUMP = m
 FILE_NAME = "backup.sql"
 ZIP_NAME = f"{str(datetime.date.today())}.zip"
-YANDEX_TOKEN = "AgAAAAATKTcKAAbTBEwBzXUv50ZSk30bJ_9BJsQ"
+YANDEX_TOKEN = ""
 
 class doDump(CronJobBase):
     RUN_EVERY_MINS = 60 * 24
